@@ -1,0 +1,33 @@
+{
+  "name": "crowdfunding",
+  "version": "1.0.0",
+  "description": "The crowdfunding app implemented on Ethereum network",
+  "main": "index.js",
+  "scripts": {
+    "contract:build": "node ./ethereum/compile.js",
+    "contract:deploy": "node ./ethereum/deploy.js",
+    "contract:test": "yarn test",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemKha/crowdfunding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtemKha/crowdfunding/issues"
+  },
+  "homepage": "https://github.com/ArtemKha/crowdfunding#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "fs-extra": "^10.1.0",
+    "mocha": "^10.0.0",
+    "solc": "^0.8.14-fixed",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.7.3"
+  },
+  "devDependencies": {
+    "ganache": "^7.2.0"
+  }
+}
